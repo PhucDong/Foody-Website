@@ -1,0 +1,31 @@
+.centered-container {
+    margin: 0 auto;
+    max-width: 100%;
+    padding: 0 16px;
+}
+
+/* Media queries */
+@media only screen and (min-width: 576px) {
+    .centered-container {
+        max-width: 540px;
+        padding: 0;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .centered-container {
+        max-width: 720px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .centered-container {
+        max-width: 960px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .centered-container {
+        max-width: 1140px;
+    }
+}

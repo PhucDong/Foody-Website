@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/container.css">
+    <link rel="stylesheet" href="css/rowColumn.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/recipesList.css">
+    <link rel="stylesheet" href="css/recipeDetail.css">
+    <link rel="stylesheet" href="css/contacts.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="shortcut icon" type="image/png" href="images/logos/yummly_favicon.png">
+    <title>Yummly | Recipe Detail</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+
+        <!-- Top bar -->
+        <section class="top-bar">
+            <div class="centered-container">
+                <div class="row--flex top-bar__row">
+                    <div class="col-sm-6 col-md-6 col-lg-6 top-bar__left-col">
+                        <ul class="row--flex top-bar__logos">
+                            <li>
+                                <a href="#">
+                                    <i class="fab fa-pinterest-square"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fab fa-twitter-square"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fab fa-behance-square"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-6 top-bar__right-col">
+                        <div class="top-bar__login">
+                            <a href="#">Register | </a>
+                            <a href="#">Login</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Top navigation -->
+        <nav class="top-nav">
+            <div class="centered-container">
+                <div class="row--flex top-nav__row">
+                    <div class="col-6 col-md-3">
+                        <a href="index.html">
+                            <img class="top-nav__logo" src="images/logos/yummly.svg" alt="yummly">
+                        </a>
+                    </div>
+
+                    <div class="col-md-8 top-nav__items-col">
+                        <ul class="row--flex top-nav__items">
+                            <li>
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li>
+                                <a href="recipesList.html">Recipes</a>
+                            </li>
+                            <li>
+                                <a class="top-nav__hightlight" href="recipeDetail.html">Recipe Detail</a>
+                            </li>
+                            <li>
+                                <a href="about.html">About</a>
+                            </li>
+                            <li>
+                                <a href="contacts.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-6 col-md-1 top-nav__icons-col">
+                        <i class="fas fa-search top-nav__search-icon"></i>
+
+                        <i class="fas fa-bars top-nav__bars" onclick="myFunction()"></i>
+                    </div>
+                </div>
+            </div>
+            <ul id="hamburger-menu">
+                <li class="fade-in fade-in-1">
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="fade-in fade-in-2">
+                    <a href="recipesList.html">Recipes</a>
+                </li>
+                <li class="fade-in fade-in-3">
+                    <a href="recipeDetail.html">Recipe Detail</a>
+                </li>
+                <li class="fade-in fade-in-4">
+                    <a href="about.html">About</a>
+                </li>
+                <li class="fade-in fade-in-5">
+                    <a href="contacts.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main content -->
+    <main>
+        <!-- Hero image -->
+        <section>
+            <div>
+                <img class="detailed-recipe-img" src="images/recipes/single-big.jpg"
+                    alt="lamb chops with green pepper sauce">
+            </div>
+        </section>
+
+        <!-- Recipe details-->
+        <section class="recipe-details">
+            <div class="centered-container">
+
+                <div class="recipe-details__title-container">
+                    <div class="recipe-details__text">
+                        <p class="level">For Beginners</p>
+                        <h2>Lamb Chops with Green Pepper Sauce</h2>
+                        <p class="date">May 15, 2018</p>
+                    </div>
+                    <ul class="recipe-details__rating-stars">
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                    </ul>
+                </div>
+
+                <div class="row--flex">
+                    <!-- Ingredients Card -->
+                    <div class="col-12 col-lg-6 recipe-details__card">
+                        <div class="recipe-details__content">
+                            <div class="recipe-details__extra">
+                                <ul>
+                                    <li>Prep: 15 mins</li>
+                                    <li>Cook: 30 mins</li>
+                                    <li>Yields: 8 servings</li>
+                                </ul>
+                            </div>
+
+                            <div class="recipe-details__main">
+                                <h3>Ingredients</h3>
+
+                                <!-- List of ingredients -->
+                                <form>
+                                    <ul class="recipe-details__list">
+                                        <li>
+                                            <input id="ingredient-1" type="checkbox">
+                                            <label for="ingredient-1">4 Tbsp (57 gr) butter</label>
+                                        </li>
+                                        <li>
+                                            <input id="ingredient-2" type="checkbox">
+                                            <label for="ingredient-2">2 large eggs</label>
+                                        </li>
+                                        <li>
+                                            <input id="ingredient-3" type="checkbox">
+                                            <label for="ingredient-3">2 yogurt containers granulated sugar</label>
+                                        </li>
+                                        <li>
+                                            <input id="ingredient-4" type="checkbox">
+                                            <label for="ingredient-4">1 vanilla or plain yogurt, 170g container</label>
+                                        </li>
+                                        <li>
+                                            <input id="ingredient-5" type="checkbox">
+                                            <label for="ingredient-5">White flour</label>
+                                        </li>
+                                        <li>
+                                            <input id="ingredient-6" type="checkbox">
+                                            <label for="ingredient-6">1.5 yogurt containers milk</label>
+                                        </li>
+                                        <li>
+                                            <input id="ingredient-7" type="checkbox">
+                                            <label for="ingredient-7">1/4 tsp cinnamon</label>
+                                        </li>
+                                        <li class="last-ingredient">
+                                            <input id="ingredient-8" type="checkbox">
+                                            <label for="ingredient-8">1 cup fresh blueberries</label>
+                                        </li>
+                                    </ul>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Guide -->
+                    <div class="col-12 col-lg-6 recipe-details__guide">
+                        <ol class="recipe-details__steps">
+                            <li>
+                                <p><span>01.</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
+                                    eligendi nulla
+                                    esse fugiat, laudantium nobis itaque ratione assumenda alias debitis maiores
+                                    ducimus, molestias dolore dignissimos iste quaerat modi mollitia eum.</p>
+                            </li>
+                            <li>
+                                <p><span>02.</span> Maecenas vel sodales ligula. In quis neque dignissim justo
+                                    ultricies vestibulum
+                                    nec vitae odio. Curabitur posuere arcu lacus, eget tristique magna cursus nec.
+                                    Quisque mattis nunc ac orci ornare, at lobortis libero tincidunt.</p>
+                            </li>
+                            <li>
+                                <p><span>03.</span> Sed turpis erat, congue at consectetur eleifend, rhoncus nec justo.
+                                    Ut et ipsum
+                                    non metus faucibus ultricies a in enim. Cras erat dolor, accumsan ac vestibulum
+                                    eu, tincidunt eget lectus. In hac habitasse platea dictumst.</p>
+                            </li>
+                            <li>
+                                <p><span>04.</span> Nunc vitae massa ut risus vulputate tincidunt. Integer felis velit,
+                                    maximus in
+                                    tortor id, dignissim ullamcorper sem. Orci varius natoque penatibus et magnis
+                                    dis parturient montes, nascetur ridiculus mus. Sed velit ante, auctor vel elit.</p>
+                            </li>
+                            <li>
+                                <p><span>05.</span> Praesent molestie justo egestas lorem condimentum placerat. Cras
+                                    bibendum magna
+                                    et metus semper, eu pellentesque est convallis. Curabitur mattis odio varius,
+                                    cursus nisl a, sodales nunc.</p>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Scroll-to-top button -->
+        <button class="scrollToTop-btn" onclick="scrollToTop()">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="row--flex footer__row">
+            <div class="col-12 col-lg-6 footer__left-col">
+                <div class="footer__logo-container">
+                    <a href="index.html">
+                        <img src="images/logos/yummly.svg" alt="yummly">
+                    </a>
+                </div>
+
+                <ul class="row--flex footer__logos">
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-pinterest-square"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-twitter-square"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-behance-square"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-12 col-lg-6 footer__right-col">
+                <ul class="row--flex footer__items top-nav__items">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="recipesList.html">Recipes</a>
+                    </li>
+                    <li>
+                        <a class="top-nav__hightlight" href="recipeDetail.html">Recipe Detail</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="contacts.html">Contact</a>
+                    </li>
+                </ul>
+
+                <p class="footer__copyright">&copy; Copyright 2019. This template is redesigned by <a href="#">Phuc
+                        Dong</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

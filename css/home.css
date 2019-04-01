@@ -1,0 +1,248 @@
+/* Hero image */
+.hero-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    background-image: url(../images/slider-bg-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.hero-img__headings > h2 {
+    text-align: center;
+}
+.hero-img__headings > h2 > span {
+    display: inline-block;
+    padding: 8px 24px;
+    border-radius: 5px;
+    color: #fff;
+}
+span.rotate1 {
+    margin-bottom: 8px;
+    background-color: #00cb22;
+    font-size: 1.4em;
+    transform: rotate(3deg);
+}
+span.rotate2 {
+    margin-bottom: 16px;
+    background-color: #5bff59;
+    font-size: 0.95em;
+    transform: rotate(-3deg);
+}
+span.rotate3 {
+    margin-bottom: 0;
+    background-color: #97ff8c;
+    font-size: 0.8em;
+}
+
+/* Top rated recipes */
+.other-recipes {
+    margin-bottom: 85px;
+}
+.other-recipes__row {
+    justify-content: space-between;
+}
+.other-recipes__row > div {
+    width: 100%;
+}
+.top-rated-recipes__card {
+    display: flex;
+    width: 100%;
+    height: 120px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 8px rgb(187, 187, 187);
+}
+.top-rated-recipes__card:last-child {
+    margin-bottom: 0;   
+}
+.top-rated-recipes__card > img {
+    width: 120px;
+}
+.top-rated-recipes__label {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    padding: 12px 0;
+    padding-left: 15px;
+    width: 100%;
+}
+.top-rated-recipes__text > p {
+    color: #00cb22;
+}
+.top-rated-recipes__text > h4 {
+    margin-top: 8px;
+    font-size: 1.1em;
+}
+.top-rated-recipes__label .recipe-details__rating-stars i {
+    color: #000;
+}
+
+/* Restaurant review card */
+.restaurant-review-card {
+    height: 100%;
+    margin-top: 85px;
+    box-shadow: 0 6px 16px rgb(209, 209, 209);
+}
+.restaurant-review-card__img-container {
+    position: relative;
+}
+.restaurant-review-card__img-container > img {
+    width: 100%;
+}
+.restaurant-review-card__img-container > p {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 8px 16px;
+    background-color: #00cb22;
+    color: #fff;
+    font-size: 1.2em;
+}
+
+.restaurant-review-card__description {
+    position: relative;
+    padding: 25px;
+}
+.restaurant-review-card__header > h3 {
+    margin-bottom: 10px;
+    font-size: 1.4em;
+}
+.restaurant-review-card__header p {
+    margin-bottom: 25px;
+    color: #00cb22;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+.restaurant-review-card__body {
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+.restaurant-review-card__comment {
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+.restaurant-review-card__footer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.restaurant-review-card__footer > i {
+    padding: 8px 16px;
+    background-color: #00cb22;
+    color: #fff;
+    font-size: 1.5em;
+}
+
+/* Special recipes */
+.special-recipes {
+    background-color: #fcc856;
+    padding: 60px 0;
+}
+.special-recipes__row {
+    justify-content: space-between;
+}
+.special-recipes__card {
+    display: flex;
+    margin-bottom: 16px;
+    height: 170px;
+    width: 100%;
+    background-color: #fff;
+}
+.special-recipes__row > div:last-child {
+    margin-bottom: 0;
+}
+
+.special-recipes__left-col {
+    position: relative;
+    width: 170px;
+}
+.special-recipes__left-col > img {
+    width: 100%;
+    height: 100%;
+}
+.special-recipes__left-col > p {
+    position: absolute;
+    top: 0;
+    padding: 10px;
+    background-color: #00cb22;
+    color: #fff;
+}
+
+.special-recipes__right-col {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    padding: 15px 0;
+    padding-left: 20px;
+    width: calc(100% - 170px);
+}
+.special-recipes__header > p {
+    color: #00cb22;
+    margin-bottom: 6px;
+}
+.special-recipes__body > i {
+    font-size: 0.8em;
+}
+.special-recipes__body > i:hover {
+    color: yellow;
+    cursor: pointer;
+}
+.special-recipes__footer {
+    display: flex;
+    align-items: center;
+}
+.special-recipes__footer > img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.special-recipes__footer > p {
+    margin-left: 8px;
+    color: grey;
+}
+
+/* Media queries */
+@media only screen and (min-width: 576px) {
+    span.rotate1 {
+        font-size: 2em;
+    }
+    span.rotate2 {
+        font-size: 1.35em;
+    }
+    span.rotate3 {
+        font-size: 1.2em;
+    }
+    .special-recipes__card {
+        width: 100%;
+    }
+
+    .restaurant-review-card {
+        width: 100%;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .top-rated-recipes, .most-liked-recipes {
+        width: 45%;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .other-recipes__row > div {
+        width: 30%;
+    }
+    .restaurant-review-card {
+        margin-top: 97px;
+    }
+    .restaurant-review-card__header > h3 {
+        font-size: 1.2em;
+    }
+    .restaurant-review-card__header p {
+        font-size: 1em;
+    }
+    .special-recipes__card {
+        width: 48%;
+    }
+    .special-recipes__card {
+        margin-bottom: 0;
+    }
+}

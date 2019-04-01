@@ -1,0 +1,89 @@
+/* About us */
+.about-us__title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    background-image: url(../images/hero-img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.about-us__title-container > h2 {
+    padding: 15px 35px;
+    background-color: #00cb22;
+    color: #fff;
+    font-size: 3em;
+    animation: fadeIn .5s linear both;
+}
+@media only screen and (max-width: 320px) {
+    .about-us__title-container > h2 {
+        padding: 15px 25px;
+        font-size: 2.5em;
+    }
+}
+
+/* About our great team */
+.about-us {
+    padding: 80px 0;
+}
+.about-us__row {
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.about-us__description {
+    text-align: left;
+    padding-right: 30px;
+}
+.about-us__description > h3 {
+    margin-bottom: 24px;
+    font-size: 2em;
+}
+.about-us__description p {
+    line-height: 1.5em;
+}
+.about-us__description a {
+    display: inline-block;
+    margin-top: 25px;
+}
+.about-us__description button {
+    padding: 15px 25px;
+    background-color: #00cb22;
+    color: #fff;
+    font-size: 1.5em;
+    cursor: pointer;
+    box-shadow: 0 4px 16px rgb(184, 184, 184);
+}
+.about-us__img-container > img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+/* Facts */
+.facts {
+    padding-top: 60px;
+    padding-bottom: 10px;
+    background-color: #eff3f7;
+}
+.facts__row {
+    justify-content: space-around;
+    align-items: stretch;
+}
+.facts__info {
+    margin-bottom: 50px;
+    text-align: center;
+}
+.facts__number {
+    margin: 10px 0;
+    color: #303030;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+/* Media queries */
+@media only screen and (max-width: 768px) {
+    .about-us__description {
+        margin-bottom: 30px;
+        padding-right: 0;
+    }
+}

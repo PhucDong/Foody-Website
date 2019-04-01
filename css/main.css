@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    display: flex;
+    flex-flow: column;
+    font: 1em Arial, Helvetica, sans-serif;
+}
+main {
+    position: relative;
+    flex: 1;
+    margin-top: 94.94px;
+}
+a {
+    text-decoration: none;
+}
+ul li, ol li {
+    list-style-type: none;
+}
+button {
+    border: none;
+}
+button.scrollToTop-btn {
+    position: fixed;
+    right: 16px;
+    bottom: 16px;
+    width: 64px;
+    height: 64px;
+    padding: 10px;
+    border-radius: 50%;
+    outline: none;
+    background-color: #ffffff;
+    box-shadow: 0 0 16px #afafaf;
+    z-index: 1;
+}
+button.scrollToTop-btn:hover {
+    cursor: pointer;
+}
+button.scrollToTop-btn > i {
+    font-size: 2.6em;
+    color: #00cb22;
+}
+
+/* Media queries */
+@media only screen and (min-width: 768px) {
+    button.scrollToTop-btn {
+        width: 72px;
+        height: 72px;
+    }
+    button.scrollToTop-btn > i {
+        font-size: 3em;
+    }
+}

@@ -1,0 +1,114 @@
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+/* Top bar */
+.top-bar {
+    padding: 6px 0; 
+    background-color: #00cb22;
+}
+.top-bar__right-col {
+    text-align: center;
+}
+.top-bar__login a {
+    color: #fff;
+}
+
+.top-bar__left-col, 
+.top-nav__items-col {
+    display: none;
+}
+
+/* Navigation */
+.top-nav {
+    position: relative;
+    padding: 8px 0;
+    background-color: #fff;
+    box-shadow: 0 1px 6px rgb(196, 196, 196);
+}
+.top-nav__row {
+    justify-content: space-between;
+    align-items: center;
+}
+.top-nav__logo {
+    width: 120px;
+}
+ul.top-nav__items > li > a.top-nav__hightlight {
+    color: #5bff59;
+}
+.top-nav__icons-col {
+    text-align: right;
+}
+.top-nav__search-icon {
+    margin-right: 8px;
+    padding: 8px;
+    border-radius: 5px;
+    background-color: #5bff59;
+    color: #fff;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+.top-nav__bars {
+    padding: 8px;
+    border: 1px solid #dddddd;
+}
+
+/* Hamburger menu */
+ul#hamburger-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    border-top: 1px solid #cccccc;
+    text-align: center;
+}
+ul#hamburger-menu > li {
+    padding: 8px 0;
+    background-color: #fff;
+}
+ul#hamburger-menu > li > a {
+    color: #000;
+    font-size: 1.1em;
+}
+
+
+/* Media queries */
+@media only screen and (min-width: 768px) {
+    /* Top bar */
+    .top-bar__row {
+        justify-content: space-between;
+        align-items: center;
+    }
+    .top-bar__logos li {
+        margin-right: 20px;
+    }
+    .top-bar__logos i {
+        color: #fff;
+        font-size: 1.4em;
+    }
+    .top-bar__right-col {
+        text-align: right;
+    }
+
+    .top-bar__left-col, 
+    .top-nav__items-col {
+        display: block;
+    }
+    /* Top navigation */
+    i.top-nav__bars {
+        display: none;
+    }
+    .top-nav__items-col li {
+        margin-right: 25px;
+    }
+    .top-nav__search-icon,
+    .top-nav__items-col > ul > li:last-child {
+        margin-right: 0;
+    }
+    .top-nav__items-col > ul > li > a {
+        color: #000;
+        font-size: 1.2em;
+    }
+}
